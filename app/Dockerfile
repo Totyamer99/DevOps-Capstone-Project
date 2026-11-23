@@ -7,6 +7,6 @@ WORKDIR /app
 COPY --from=builder /app/node_modules ./node_modules
 COPY package.json package-lock.json ./
 COPY src ./src
-USER node
+USER root
 EXPOSE 3000
 CMD ["node", "src/server.js"]
