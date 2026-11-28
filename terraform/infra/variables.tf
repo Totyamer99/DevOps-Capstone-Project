@@ -38,5 +38,6 @@ variable "node_desired_size" {
 variable "admin_principal_arns" {
   description = "Extra IAM user/role ARNs (e.g. your own IAM user) that get cluster-admin via kubectl"
   type        = list(string)
-  default     = []
+  default     = ["arn:aws:iam::597322253674:user/capstone-admin"]
 }
+# capstone pipeline test
